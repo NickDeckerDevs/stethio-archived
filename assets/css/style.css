@@ -163,7 +163,7 @@ label {
 
 .hero-mobile {
   display: none;
-  background: url("../img/sampleapp2.jpg") no-repeat center center fixed;
+  background: url("https://nickdeckerdevs.github.io/stethio-archived/assets/img/sampleapp2.jpg") no-repeat center center fixed;
   height: 60vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -514,7 +514,7 @@ i {
 
 /* CTA SECTION */
 #cta {
-  background: url(../img/sampleapp.jpg) no-repeat center top;
+  background: url(https://nickdeckerdevs.github.io/stethio-archived/assets/img/sampleapp.jpg) no-repeat center top;
   background-color: #f2f2f2;
   padding-top: 150px;
   text-align: center;
