@@ -1,0 +1,853 @@
+
+$stethblue: #1d87c9;
+$stethgreen: #6bc085;
+$stethdarkblue: #0f516b;
+$bodycopy: #383838;
+
+
+/* Import fonts */
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import "magnific.css";
+
+/* ==========================================================================
+   Helpers
+   ========================================================================== */
+
+.ma-nofl {
+	float: none;
+	margin: 0 auto;
+}
+
+.no-pl {
+	padding-left: 0px;
+}
+
+html {
+	   -webkit-font-smoothing: antialiased;
+}
+
+.img-center {
+	display: inline-table;
+    height: auto;
+    max-width: 1600px;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+img {
+	max-width: 100%;
+}
+
+.smb {
+	margin-bottom: 20px;
+}
+
+a, a:hover, a:active, a:focus {
+	outline: 0;
+	border: 0;
+}
+
+
+/* ==========================================================================
+   Color controls
+   ========================================================================== */
+
+.greenbg {
+	border: 2px solid $stethgreen;
+	background-color: #fff;
+	color: $stethgreen;
+	font-weight: 600;
+}
+
+.greenbg:focus {
+	border: 2px solid $stethgreen;
+	background-color: #fff;
+	color: $stethgreen;
+	font-weight: 600;
+}
+
+.greenbg:hover {
+	border: 2px solid $stethgreen;
+	color: #fff;
+	background-color: $stethgreen;
+}
+
+.lightgraybg {
+	background: #f0f0f0;
+}
+
+/* ==========================================================================
+   Link colors
+   ========================================================================== */
+
+#news {
+	margin-bottom: 145px;
+	a {
+		color: $stethblue
+	}
+}
+
+
+/* ==========================================================================
+   Buttons and Forms
+   ========================================================================== */
+
+.button {
+	padding: 11px 70px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 600;
+	display:block;
+	float:left;
+	font-size: 14px;
+	text-align: center;
+	transition: background-color .05s ease-in-out;
+    -moz-transition: background-color .05s ease-in-out;
+    -webkit-transition: background-color .05s ease-in-out;
+}
+
+.button:hover {
+	
+}
+
+label {
+	font-size: 15px;
+	color: #666;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group {
+	padding-left: 0px;
+}
+
+.ordernumber {	
+	border: 2px solid #666;
+	line-height: 28px;
+	width: 50px;
+	padding: 0px;
+	font-size: 22px;
+	text-align: center;
+}
+
+.ordernumber:focus {
+	border: 0px;
+	outline: 0px;
+}
+
+
+
+/* ==========================================================================
+   FAQ - should be animated in angular
+   ========================================================================== */
+
+.transition, p, ul li i:before, ul li i:after {
+  transition: all 0.25s ease-in-out;
+}
+
+#faq {
+.flipIn, h1, ul li {
+  /*animation: flipdown 0.5s ease both;*/
+}
+
+
+	 h2 {
+	  font-size: 16px !important;
+	  line-height: 25px;
+	  font-weight: 600;
+	  color: #000;
+	  display: block;
+	  background-color: #ffffff;
+	  margin: 0;
+	  cursor: pointer;
+	}
+
+	p {
+	  font-size: 15px;
+	  line-height: 26px;
+	  position: relative;
+	  overflow: hidden;
+	  max-height: 800px;
+	  opacity: 1;
+	  transform: translate(0, 0);
+	  margin-top: 14px;
+	  z-index: 2;
+	  color: #666 !important;
+	}
+
+	ul {
+	  list-style: none;
+	  perspective: 900;
+	  padding: 0;
+	  margin: 0;
+	  display:block;
+	  float:left;
+	}
+	ul li {
+	  padding: 0;
+	  margin: 0;
+	  padding-bottom: 4px;
+	  padding-top: 18px;
+	  background: #fff;
+	}
+	ul li:nth-of-type(1) {
+	  animation-delay: 0.1s;
+	}
+	ul li:nth-of-type(2) {
+	  animation-delay: 0.1s;
+	}
+	ul li:nth-of-type(3) {
+	  animation-delay: .1s;
+	}
+	ul li:last-of-type {
+	  padding-bottom: 0;
+	}
+}
+
+
+
+/* ==========================================================================
+   App Demo
+   ========================================================================== */
+
+.hero-desktop {
+	width: 100%;
+	max-width:650px;
+	margin: 0 auto;
+}
+
+.hero-mobile {
+	display: none;
+	background: url('../img/sampleapp2.jpg') no-repeat center center fixed;	
+	height: 60vh;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.herotwo {
+	margin: 0 auto;	
+	position: relative;
+}
+
+.appdemo {
+    width: 338px;
+    height: 640px;
+    background: url("/assets/img/mainappdemo.jpg") no-repeat;
+    padding-top: 41px;
+    display:block;
+    float:left;
+
+    video {
+    	margin-left:37px;
+    }
+}
+
+.slogan {
+	font-size: 38px;
+	letter-spacing: 1.5px;
+	font-weight: 100;
+}
+
+.appdemo-landscape {
+    width: 630px;
+    height: 348px;
+    background: url("/assets/img/stethapp-monitor.png") no-repeat;
+    padding-top: 27px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    background-size: 630px;
+
+    video {
+    	margin-left:37px;
+    	position: absolute;
+    }
+}
+
+video {
+	object-fit: contain;
+}
+
+* { 
+	margin: 0;
+	padding: 0px;
+	font-family: 'source sans pro', sans-serif;
+} 
+body { 
+	background: #fff; 
+	margin: 0; 
+	color: #5a5a5a;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'source sans pro', sans-serif;
+font-weight: 300;
+color: $bodycopy;
+}
+p { 
+	padding: 0; 
+	margin-bottom: 12px; 
+    font-family: 'source sans pro', sans-serif;
+	font-weight: 400;
+	font-size: 16px; 
+	line-height: 24px;
+	color: $bodycopy; 
+	margin-top: 10px; 
+}
+html,
+body {
+	height: 100%;
+}
+
+.alignleft { float: left; }
+.alignright { float: right; }
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	clear: both;
+}
+.centered {text-align: center}
+.mt {margin-top: 50px;}
+.mb {margin-bottom: 50px;}
+.mtb {margin-top: 50px; margin-bottom: 50px;}
+.mtb2 { margin-top: 100px; margin-bottom: 100px;}
+.ptb {padding-top: 80px; padding-bottom: 80px;}
+
+.clear {
+	clear: both;
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	width:100%;
+}
+::-moz-selection  {
+	color: #fff;
+	text-shadow:none;
+	background:#2B2E31;
+}
+::selection {
+	color: #fff;
+	text-shadow:none;
+	background:#2B2E31;
+}
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+a { 
+	padding: 0;
+	margin: 0;
+	text-decoration: none; 
+	color: #444;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color:#444;
+}
+
+/* Bootstrap Modification */
+
+.navbar-inverse {
+	background: #2f2f2f;
+	border-color: #2f2f2f;
+}
+
+.navbar-right {
+	padding-top: 10px;
+}
+
+.navbar-brand {
+	margin-top: 5px;
+}
+
+.navbar-nav {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.navbar {
+	padding-bottom: 2px;
+	background-color: rgba(255,255,255,.8);
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	color: #fff;
+	background-color: transparent;
+}
+
+.navbar {
+	a {
+		color: $stethblue;
+		font-size: 1.4rem;
+		font-weight: 600;
+	}
+	.spacetop {
+		margin-top: 9px;
+	}
+}
+
+.navbar-toggle .icon-bar {
+	background: $stethblue;
+}
+
+.order-topnav {
+	padding: 5px 20px !important;
+	border: 2px solid $stethblue;
+	letter-spacing: 2px;
+	margin-left: 20px;
+}
+
+.order-topnav:active {
+	padding: 5px 20px !important;
+	border: 2px solid $stethblue;
+	letter-spacing: 2px;
+	margin-left: 20px;
+}
+
+.order-topnav:focus {
+	padding: 5px 20px !important;
+	border: 2px solid $stethblue;
+	letter-spacing: 2px;
+	margin-left: 20px;
+}
+
+.order-topnav:hover {
+	background: $stethblue;
+	color: #fff;
+	border: 2px solid $stethblue;
+}
+
+#smallfeatures {
+	padding: 40px 0px;
+
+	img {
+		max-width: 110px;
+		margin: 0 auto;
+	}
+
+	p {
+		font-size: 18px;
+		max-width: 230px;
+	    margin: 0 auto;
+	}
+}
+#bigfeatures h4 {
+	margin-bottom: 20px;
+}
+
+.vertical-align-text {
+  display: table;
+  width: 100%;
+}
+
+.vertical-align-text-block {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  float: none;
+}
+
+#bigfeature {
+	.description {
+		max-width: 640px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/* ==========================================================================
+   Preorder
+   ========================================================================== */
+
+.mfp-content {
+	max-width: 650px;
+	padding: 30px;
+	background: #fff;
+}
+
+
+/* ==========================================================================
+   Staff
+   ========================================================================== */
+
+#staff {
+	img {
+		border-radius: 50%;
+		max-width: 240px;
+	}
+
+	.title {
+		color: $stethblue;
+	}
+}
+
+/* ==========================================================================
+   NEWS
+   ========================================================================== */
+
+
+.newsarticle {
+	time {
+		width: 100%;
+		display:block;
+		float:left;
+		font-style: italic;
+	}
+}
+
+
+/* FORM CONFIGURATION */
+
+input {
+	font-size: 16px;
+	min-height: 40px;
+	border-radius: 2px;
+	line-height: 20px;
+	padding: 16px 30px 18px;
+	border: 1px solid #b9b9af;
+	margin-bottom: 10px;
+	background-color: #fff;
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+}
+
+.subscribe-input {
+	float: left;
+	width: 70%;
+	text-align: left;
+	margin-right: 2px;
+}
+
+.subscribe-submit {
+	right: 0;
+	padding: 15px 20px 17px;
+}
+
+
+
+/* General Configuration */
+h4 {
+	font-size: 24px;
+	letter-spacing: .5px;
+	line-height: 28px;
+}
+
+h5 {
+	font-weight: 400;
+}
+
+i {
+	font-size: 50px;
+}
+
+/* HEADER SECTION */
+#h {
+	margin-top: 100px;
+}
+
+#h2 {
+	margin-top: 68px;
+
+	.appdemo {
+	    width: 644px;
+	    height: 638px;
+	    background: url("/assets/img/steth-device-mockup-v2.png") no-repeat;
+	    padding-top: 41px;
+	    display:block;
+	    float:left;
+
+	    video {
+	    	margin-top: 35px;
+	    	margin-left:107px;
+	    }
+	}
+
+
+  .appdemo-landscape {
+  	display:block;
+  	float:left;
+  	margin: 0 !important;
+  }
+
+  .heroright {
+  	display:block;
+  	float:left;
+  }
+}
+
+#h img {
+	max-width: 100%;
+}
+
+#h h1 {
+	color: white;
+	font-size: 75px;
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+
+#h h2 {
+	color: white;
+	font-weight: 100;
+}
+
+#h hr {
+	border: 1px white solid;
+	width: 200px;
+}
+
+
+#portfolio {
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: #f2f2f2;
+}
+.cbp-item-wrapper {
+    background: #2f2f2f;
+}
+.cbp-item-wrapper a img {
+    display: block;
+    width: 100%;
+    background-image: center center;
+    height: auto;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.cbp-item-wrapper a:hover img {
+    opacity: 0.8;
+}
+
+/* CTA SECTION */
+#cta {
+	background: url(../img/sampleapp.jpg) no-repeat center top;
+	background-color: #f2f2f2;
+	padding-top: 150px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 900px;
+	width: 100%;
+	margin-top: 50px;
+	color: white;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#cta h1 {
+	color: white;
+	font-size: 60px;
+	font-weight: 100;
+}
+
+/* FOOTER */
+#f {
+	padding-bottom: 50px;
+	padding-top: 50px;
+	background: $stethdarkblue;
+	color: #fff;
+
+	nav {
+		width : 100%;
+		list-style: none;
+		display:block;
+		float:left;
+		margin-bottom: 15px;
+
+		li {
+			display:block;
+			float:left;
+			margin: 0px 15px 0px 0px;
+
+			a {
+				font-size: 1.8rem;
+				font-weight: 100;
+				color: #fff;
+			}	
+		}
+	}
+	h5 {
+		color: #fff;
+	}
+
+}
+
+/* OVERFLOW */
+
+.of {
+	overflow: hidden;
+}
+
+/* ==========================================================================
+   preorder
+   ========================================================================== */
+
+.paymentbg {
+	background: #fff;
+	padding: 0px 25px;
+}
+
+.paynow {
+	float: none;
+}
+
+
+
+@media screen and (max-width: 983px) {
+	#smallfeatures {
+		.col-md-4 {
+			width: 50%;	
+			display:block;
+			float:left;
+		}
+	}	
+}
+
+@media (max-width: 768px) {
+	#smallfeatures {
+		margin-top: 0px;
+	}
+	.vertical-align-text {
+		width: auto;
+	}
+	.slogan {
+		margin-bottom: 60px;
+		font-size: 28px;
+	}	
+	.navbar-nav {
+		margin-bottom: 50px;
+	}
+
+	.hero-desktop {
+		display: none;		
+	}
+
+	.hero-mobile {
+		display: block;		
+	}
+
+	#h {
+		margin-top: 0px;
+	}
+
+	.text-align-center-mobile {
+		text-align: center;
+	}
+
+	.order {
+		margin-left: 0px;
+		margin: 0 auto;
+		max-width: 240px;
+		text-align: center;
+	}
+
+	.navbar {
+		text-align: center;
+		padding-bottom: 0px;
+	}
+
+	.vertical-align-text, .vertical-align-text-block {
+		display: block;
+	}
+
+
+	.appdemo-landscape {
+	    width: 510px;
+	    height: 248px;
+	    background: url("/assets/img/stethapp-monitor.png") no-repeat;
+	    padding-top: 27px;
+	    display: block;
+	   
+	    position: relative;
+	    background-size: 510px;
+
+	    video {
+	    	display: none;	    	
+	    	margin-left:37px;
+	    	position: absolute;
+	    }
+	}
+
+	.button {
+		float: none;
+		margin: 0 auto;
+		max-width: 240px;
+	}
+	
+
+}
+
+@media screen and (max-width: 500px) {
+	#smallfeatures {
+		margin-top: 0px;
+		.col-md-4 {
+			width: 100%;	
+			display:block;
+			float:left;
+		}
+		.col-md-3 {
+			width: 100% !important;	
+			display:block;
+			float:left;
+		}
+	}	
+	.vertical-align-text {
+		width: auto;
+	}
+	.slogan {
+ 	   font-size: 28px;
+ 	   margin-bottom: 40px;
+	}
+
+	.vertical-align-text, .vertical-align-text-block {
+		display: block;
+	}
+
+	.appdemo-landscape {
+	    width: 310px;
+	    height: 150px;
+	    background: url("/assets/img/stethapp-monitor.png") no-repeat;
+	    position: relative;
+	    background-size: 310px;
+
+	}
+
+	#cta {
+		min-height: 400px;
+	}
+
+	.button {
+		float: none;
+		margin: 0 auto;
+		max-width: 240px;
+	}
+	
+
+	
+}
+
+
+
