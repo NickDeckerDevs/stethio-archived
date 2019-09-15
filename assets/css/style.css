@@ -1,5 +1,5 @@
 /* Import fonts */
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @import url(magnific.css);
 /* ==========================================================================
    Helpers
@@ -177,7 +177,7 @@ label {
 .appdemo {
   width: 338px;
   height: 640px;
-  background: url(https://nickdeckerdevs.github.io/assets/img/mainappdemo.jpg") no-repeat;
+  background: url("https://nickdeckerdevs.github.io/assets/img/mainappdemo.jpg") no-repeat;
   padding-top: 41px;
   display: block;
   float: left; }
@@ -192,7 +192,7 @@ label {
 .appdemo-landscape {
   width: 630px;
   height: 348px;
-  background: url(https://nickdeckerdevs.github.io/assets/img/stethapp-monitor.png") no-repeat;
+  background: url("https://nickdeckerdevs.github.io/assets/img/stethapp-monitor.png") no-repeat;
   padding-top: 27px;
   display: block;
   margin: 0 auto;
@@ -460,7 +460,7 @@ i {
   #h2 .appdemo {
     width: 644px;
     height: 638px;
-    background: url(https://nickdeckerdevs.github.io/assets/img/steth-device-mockup-v2.png") no-repeat;
+    background: url("https://nickdeckerdevs.github.io/assets/img/steth-device-mockup-v2.png") no-repeat;
     padding-top: 41px;
     display: block;
     float: left; }
@@ -622,7 +622,7 @@ i {
   .appdemo-landscape {
     width: 510px;
     height: 248px;
-    background: url(https://nickdeckerdevs.github.io/assets/img/stethapp-monitor.png") no-repeat;
+    background: url("https://nickdeckerdevs.github.io/assets/img/stethapp-monitor.png") no-repeat;
     padding-top: 27px;
     display: block;
     position: relative;
@@ -661,7 +661,7 @@ i {
   .appdemo-landscape {
     width: 310px;
     height: 150px;
-    background: url(https://nickdeckerdevs.github.io/assets/img/stethapp-monitor.png") no-repeat;
+    background: url("https://nickdeckerdevs.github.io/assets/img/stethapp-monitor.png") no-repeat;
     position: relative;
     background-size: 310px; }
 
